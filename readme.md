@@ -2,7 +2,7 @@
 # YTDL (Yet (another) Tool for Donwnloading (Youtube Music))
 ![stars](https://img.shields.io/github/stars/dumpydev/ytdl)
 ![issues](https://img.shields.io/github/issues/dumpydev/ytdl)
-![license](https://img.shields.io/github/license/dumpydev/ytdl)
+![license](https://img.shields.io/github/license/dumpydev/ytdl)   
 A simple command-line tool to download videos from YouTube.
 ## Prerequisites
 
