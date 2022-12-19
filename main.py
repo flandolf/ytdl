@@ -1,7 +1,9 @@
 from pytube import Playlist, YouTube
 import rm
+print('Enter the playlist URL: ')
+playlist_url = input()
 # Replace PLAYLIST_URL with the URL of the YouTube playlist you want to download
-playlist = Playlist('https://music.youtube.com/playlist?list=PLYFfG4QnfZqK6jKO243hABSsw685oGXoh')
+playlist = Playlist(playlist_url)
 
 # Print the list of videos in the playlist
 print(playlist.video_urls)
@@ -21,7 +23,11 @@ for url in playlist.video_urls:
     # Create an input stream from the video file
     video_file = './videos/' + stream.default_filename 
 import os
-
+def delete(path):
+    import os
+    for file in os.listdir(path):
+        if file.endswith('.mp4'):
+            os.system('del "videos/' + file + '"')
 # Replace './videos' with the path to the directory where the video files are stored
 for file in os.listdir('./videos'):
     # Check if the file is a video file
